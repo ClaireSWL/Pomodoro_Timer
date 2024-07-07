@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro Timer</title>
+    <!-- FONT -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&amp;family=Proza+Libre:wght@400;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- ICONS -->
+    <script
+      src="https://kit.fontawesome.com/5f3810411b.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <section>
+      <div class="container">
+        <h1>Pomodoro Timer</h1>
+
+        <div class="painel">
+          <button id="work" onclick="setTimer('work')">work</button>
+          <button id="shortbreak" onclick="setTimer('shortBreak')">
+            short break
+          </button>
+          <button id="longbreak" onclick="setTimer('longBreak')">
+            long break
+          </button>
+        </div>
+
+        <div class="timer">
+          <div class="circle">
+            <div class="time">
+              <p id="minutes"></p>
+              <p>:</p>
+              <p id="seconds"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="controls">
+          <button id="start" onclick="start()">
+            <i class="fa-solid fa-play"></i>
+          </button>
+
+          <button id="stop" onclick="stop()">
+            <i class="fa-solid fa-stop"></i>
+          </button>
+
+          <button id="reset" onclick="reset()">
+            <i class="fa-solid fa-arrow-rotate-left"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCRITPT -->
+    <script src="./script.js"></script>
+  </body>
+</html>
